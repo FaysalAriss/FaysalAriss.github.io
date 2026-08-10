@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title — Your Name</title>
+  <meta name="description" content="Case study: Project Title.">
+
+  <!-- Set theme before first paint so there's no light/dark flash -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <button class="theme-toggle" data-theme-toggle type="button">Dark mode</button>
+      <div class="identity">
+        <h1 class="identity__name" style="font-size:1.4rem;">Your Name</h1>
+        <p class="identity__role">Software Engineer</p>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html#projects">← All projects</a></li>
+          <li><a class="nav__link" href="../index.html#about">About</a></li>
+          <li><a class="nav__link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="case-header">
+        <a class="case-header__back" href="../index.html#projects">&larr; Back to projects</a>
+        <!-- TODO: project title -->
+        <h1 class="case-header__title">Project Title</h1>
+        <!-- TODO: one-sentence summary -->
+        <p class="case-header__summary">
+          A one- or two-sentence summary of what this project is and the problem it solves.
+        </p>
+
+        <div class="case-header__facts">
+          <div class="fact">
+            <p class="fact__label">Role</p>
+            <p class="fact__value">Solo project / Team of 3, etc.</p>
+          </div>
+          <div class="fact">
+            <p class="fact__label">Timeline</p>
+            <p class="fact__value">Jan–Mar 2026</p>
+          </div>
+          <div class="fact">
+            <p class="fact__label">Stack</p>
+            <p class="fact__value">React, Node.js, PostgreSQL</p>
+          </div>
+          <div class="fact">
+            <p class="fact__label">Links</p>
+            <p class="fact__value">
+              <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code</a>
+              &nbsp;·&nbsp;
+              <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <!-- TODO: replace everything below with your real writeup.
+             Suggested structure for an engineering case study:
+             Problem → Approach → Interesting technical decisions → Result -->
+
+        <h2>The problem</h2>
+        <p>
+          What situation prompted this project? Who has this problem, and why did existing
+          solutions fall short?
+        </p>
+
+        <h2>Approach</h2>
+        <p>
+          How did you break the problem down? What was your architecture or plan?
+        </p>
+        <ul>
+          <li>Key decision or constraint one</li>
+          <li>Key decision or constraint two</li>
+          <li>Key decision or constraint three</li>
+        </ul>
+
+        <!-- Screenshot or diagram -->
+        <img src="../assets/project-1-screenshot.png" alt="Screenshot of Project Title showing the main interface">
+
+        <h2>Interesting technical challenges</h2>
+        <p>
+          This is the section hiring managers actually read closely. Pick one or two specific,
+          gnarly problems you solved and walk through your reasoning — not just what you built,
+          but why you built it that way.
+        </p>
+        <pre><code>// A short, illustrative code snippet if relevant
+function example() {
+  return "keep this short — a link to the repo covers the rest";
+}</code></pre>
+
+        <h2>Result</h2>
+        <p>
+          What happened? Metrics if you have them (users, performance numbers, adoption), or just
+          an honest note on what you'd do differently next time.
+        </p>
+      </div>
+
+      <footer class="footer">
+        <span>&copy; 2026 Your Name</span>
+        <a href="../index.html#projects">&larr; Back to all projects</a>
+      </footer>
+    </main>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

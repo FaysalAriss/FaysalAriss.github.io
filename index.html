@@ -31,14 +31,10 @@
       <button class="theme-toggle" data-theme-toggle type="button">Dark mode</button>
 
       <div class="identity">
-        <!-- TODO: your name -->
-        <h1 class="identity__name">Your Name</h1>
-        <!-- TODO: your role / focus -->
-        <p class="identity__role">Software Engineer</p>
-        <!-- TODO: 1–2 sentence bio -->
+        <h1 class="identity__name">Faysal Ariss</h1>
+        <p class="identity__role">Computer Engineering @ UBC</p>
         <p class="identity__bio">
-          I build things for the web. Currently focused on [area you care about] —
-          based in [city], open to [what you're looking for].
+          I'm passionate about hardware and software: embedded systems, firmware, PCB design, FPGAs and ASICs. Also always on the lookout for tools to help me stay organized or improve my workflow.
         </p>
       </div>
 
@@ -69,46 +65,33 @@
 
         <div class="experience-list">
 
-          <!-- Job 1 — duplicate this block for each role. Replace the logo src with the company's actual logo. -->
+          <!-- Job 1 — duplicate this block for each role. Replace the logo src with the company's actual logo.
+               experience__type is the position designator — e.g. Co-op, Full-time, Part-time, Internship, Contract. -->
           <article class="experience">
             <div class="experience__logo">
-              <!-- TODO: replace with the company's logo (svg/png, roughly square works best) -->
-              <img src="assets/logo-placeholder.svg" alt="Company Name logo">
+              <a href="https://skykey.ca"> <img src="assets/skykey_ico.svg" alt="SkyKey logo"> </a>
             </div>
             <div class="experience__body">
               <div class="experience__header">
-                <h3 class="experience__title">Job Title <span class="experience__company">— Company Name</span></h3>
-                <span class="experience__period">Jun 2024 — Present</span>
+                <div class="experience__title-group">
+                  <h3 class="experience__title"><a href="experiences/skykey.html">Embedded Software Engineer <span class="experience__company">- SkyKey</span></a></h3>
+                  <span class="experience__type">Co-op</span>
+                </div>
+                <span class="experience__period">May 2026 - Present</span>
               </div>
               <p class="experience__desc">
-                What you did, the scope of your role, and an impact or two — a shipped feature,
-                a metric you moved, a system you owned.
-              </p>
-              <ul class="tags">
-                <li class="tag">React</li>
-                <li class="tag">TypeScript</li>
-                <li class="tag">AWS</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Job 2 -->
-          <article class="experience">
-            <div class="experience__logo">
-              <img src="assets/logo-placeholder.svg" alt="Another Company logo">
-            </div>
-            <div class="experience__body">
-              <div class="experience__header">
-                <h3 class="experience__title">Job Title <span class="experience__company">— Another Company</span></h3>
-                <span class="experience__period">Jul 2022 — May 2024</span>
-              </div>
-              <p class="experience__desc">
-                Same idea — one or two sentences on scope and impact.
+                Developped math expression rendering engine by first prototyping in Python, porting to C then intigrating it into the existing firmware for the ESP32.
               </p>
               <ul class="tags">
                 <li class="tag">Python</li>
-                <li class="tag">PostgreSQL</li>
+                <li class="tag">C</li>
+                <li class="tag">ESP32</li>
+                <li class="tag">Testing</li>
+                <li class="tag">Claude Code</li>
               </ul>
+              <div class="project__image">
+                <img src="assets/skykey_image.png.webp" alt="Photo of Project Title">
+              </div>
             </div>
           </article>
 
@@ -122,83 +105,83 @@
 
         <div class="project-list">
 
-          <!-- Project 1 — duplicate this block for each project -->
           <article class="project">
             <span class="project__index">01</span>
             <div class="project__body">
               <div class="project__header">
-                <h3 class="project__title"><a href="projects/project-1.html">Project Title</a></h3>
-                <span class="project__period">2026</span>
+                <h3 class="project__title"><a href="projects/project-1.html">Ultra Low Power E-Ink Tracker</a></h3>
+                <span class="project__period">February 2026 - Present</span>
               </div>
               <p class="project__desc">
-                One or two sentences on what this project is and the problem it solves.
-                Write it like you'd explain it to someone smart but unfamiliar with the domain.
+                Embedded project made to track a task by displaying done X days ago. Runs on a coin cell, stays low power by shutting down MCU and removing power from screen until clock tells it to refresh the day count once daily.
+
               </p>
               <div class="project__meta">
                 <ul class="tags">
-                  <li class="tag">React</li>
-                  <li class="tag">Node.js</li>
-                  <li class="tag">PostgreSQL</li>
+                  <li class="tag">STM32</li>
+                  <li class="tag">C</li>
+                  <li class="tag">Schematic Capture</li>
+                  <li class="tag">PCB Design</li>
                 </ul>
                 <div class="project__links">
-                  <a href="projects/project-1.html">Case study →</a>
-                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code</a>
-                  <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live</a>
+                  <a href="https://github.com/FaysalAriss/cleaning-tracker" target="_blank" rel="noopener">Code and Project Files</a>
                 </div>
               </div>
 
-              <!-- Optional: add a photo for projects that are better shown than described
-                   (physical builds, hardware, anything with a real UI). Omit this block
-                   entirely for projects that don't need it. -->
               <div class="project__image">
-                <img src="assets/photo-placeholder.svg" alt="Photo of Project Title">
+                <img src="https://github.com/FaysalAriss/cleaning-tracker/raw/main/docs/assets/main-showcase.JPEG" height="400px" alt="Photo of Project Title">
+                <img src="https://github.com/FaysalAriss/cleaning-tracker/raw/main/docs/assets/pcb-showcase.JPEG" height="400px" alt="Photo of Project Title">
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
+
           <article class="project">
             <span class="project__index">02</span>
             <div class="project__body">
               <div class="project__header">
-                <h3 class="project__title"><a href="projects/project-2.html">Another Project</a></h3>
-                <span class="project__period">2025</span>
+                <h3 class="project__title"><a href="projects/project-2.html">Grade Roulette - UBC Grade Gamifier</a></h3>
+                <span class="project__period">January - February 2026</span>
               </div>
               <p class="project__desc">
-                What it does, who it's for, and the interesting technical decision you made along the way.
+                  A web extension to make getting your final grades a little more fun. Hides your grades and lets you guess what you got. Developed to work for Workday, mainly for UBC.
               </p>
               <div class="project__meta">
                 <ul class="tags">
-                  <li class="tag">Python</li>
-                  <li class="tag">FastAPI</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">Object Oriented Programming</li>
+                  <li class="tag">Browser APIs</li>
                 </ul>
                 <div class="project__links">
-                  <a href="projects/project-2.html">Case study →</a>
-                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code</a>
+
+                  <a href="https://github.com/FaysalAriss/guessyourgrade" target="_blank" rel="noopener">Code</a>
+                </div>
+
+                <div class="project__image">
+                  <img src="assets/graderoulette-main-demo.gif" height="200px" alt="Photo of Project Title">
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
           <article class="project">
             <span class="project__index">03</span>
             <div class="project__body">
               <div class="project__header">
-                <h3 class="project__title"><a href="projects/project-3.html">Third Project</a></h3>
-                <span class="project__period">2025</span>
+                <h3 class="project__title"><a href="projects/project-3.html">Unix Shell</a></h3>
+                <span class="project__period">February 2026</span>
               </div>
               <p class="project__desc">
-                Short description. Not every project needs a full case study — this link can also
-                just point straight to the GitHub repo if that's simpler.
+                  Unix shell made in C which supports job control, foreground and background execution, signal handling, and process management on Linux.
               </p>
               <div class="project__meta">
                 <ul class="tags">
-                  <li class="tag">Rust</li>
-                  <li class="tag">CLI</li>
+                  <li class="tag">C</li>
+                  <li class="tag">GDB</li>
+                  <li class="tag">Make</li>
+                  <li class="tag">Linux</li>
                 </ul>
                 <div class="project__links">
-                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code →</a>
                 </div>
               </div>
             </div>
