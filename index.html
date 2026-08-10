@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Software Engineer</title>
+  <meta name="description" content="Portfolio of Your Name, software engineer. Projects, experience, and how to get in touch.">
+
+  <!-- Set theme before first paint so there's no light/dark flash -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Fonts: Fraunces (display serif) + Inter (body) + JetBrains Mono (labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="shell">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <button class="theme-toggle" data-theme-toggle type="button">Dark mode</button>
+
+      <div class="identity">
+        <!-- TODO: your name -->
+        <h1 class="identity__name">Your Name</h1>
+        <!-- TODO: your role / focus -->
+        <p class="identity__role">Software Engineer</p>
+        <!-- TODO: 1–2 sentence bio -->
+        <p class="identity__bio">
+          I build things for the web. Currently focused on [area you care about] —
+          based in [city], open to [what you're looking for].
+        </p>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="socials">
+        <!-- TODO: replace with your real links -->
+        <li><a class="socials__link" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="socials__link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a class="socials__link" href="mailto:you@example.com">Email</a></li>
+      </ul>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+      <!-- ---------- EXPERIENCE ---------- -->
+      <section class="section" id="experience">
+        <p class="section__eyebrow">Where I've worked</p>
+        <h2 class="section__title">Experience</h2>
+
+        <div class="experience-list">
+
+          <!-- Job 1 — duplicate this block for each role. Replace the logo src with the company's actual logo. -->
+          <article class="experience">
+            <div class="experience__logo">
+              <!-- TODO: replace with the company's logo (svg/png, roughly square works best) -->
+              <img src="assets/logo-placeholder.svg" alt="Company Name logo">
+            </div>
+            <div class="experience__body">
+              <div class="experience__header">
+                <h3 class="experience__title">Job Title <span class="experience__company">— Company Name</span></h3>
+                <span class="experience__period">Jun 2024 — Present</span>
+              </div>
+              <p class="experience__desc">
+                What you did, the scope of your role, and an impact or two — a shipped feature,
+                a metric you moved, a system you owned.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">AWS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Job 2 -->
+          <article class="experience">
+            <div class="experience__logo">
+              <img src="assets/logo-placeholder.svg" alt="Another Company logo">
+            </div>
+            <div class="experience__body">
+              <div class="experience__header">
+                <h3 class="experience__title">Job Title <span class="experience__company">— Another Company</span></h3>
+                <span class="experience__period">Jul 2022 — May 2024</span>
+              </div>
+              <p class="experience__desc">
+                Same idea — one or two sentences on scope and impact.
+              </p>
+              <ul class="tags">
+                <li class="tag">Python</li>
+                <li class="tag">PostgreSQL</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ---------- PROJECTS ---------- -->
+      <section class="section" id="projects">
+        <p class="section__eyebrow">Selected Work</p>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="project-list">
+
+          <!-- Project 1 — duplicate this block for each project -->
+          <article class="project">
+            <span class="project__index">01</span>
+            <div class="project__body">
+              <div class="project__header">
+                <h3 class="project__title"><a href="projects/project-1.html">Project Title</a></h3>
+                <span class="project__period">2026</span>
+              </div>
+              <p class="project__desc">
+                One or two sentences on what this project is and the problem it solves.
+                Write it like you'd explain it to someone smart but unfamiliar with the domain.
+              </p>
+              <div class="project__meta">
+                <ul class="tags">
+                  <li class="tag">React</li>
+                  <li class="tag">Node.js</li>
+                  <li class="tag">PostgreSQL</li>
+                </ul>
+                <div class="project__links">
+                  <a href="projects/project-1.html">Case study →</a>
+                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code</a>
+                  <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live</a>
+                </div>
+              </div>
+
+              <!-- Optional: add a photo for projects that are better shown than described
+                   (physical builds, hardware, anything with a real UI). Omit this block
+                   entirely for projects that don't need it. -->
+              <div class="project__image">
+                <img src="assets/photo-placeholder.svg" alt="Photo of Project Title">
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <span class="project__index">02</span>
+            <div class="project__body">
+              <div class="project__header">
+                <h3 class="project__title"><a href="projects/project-2.html">Another Project</a></h3>
+                <span class="project__period">2025</span>
+              </div>
+              <p class="project__desc">
+                What it does, who it's for, and the interesting technical decision you made along the way.
+              </p>
+              <div class="project__meta">
+                <ul class="tags">
+                  <li class="tag">Python</li>
+                  <li class="tag">FastAPI</li>
+                </ul>
+                <div class="project__links">
+                  <a href="projects/project-2.html">Case study →</a>
+                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <span class="project__index">03</span>
+            <div class="project__body">
+              <div class="project__header">
+                <h3 class="project__title"><a href="projects/project-3.html">Third Project</a></h3>
+                <span class="project__period">2025</span>
+              </div>
+              <p class="project__desc">
+                Short description. Not every project needs a full case study — this link can also
+                just point straight to the GitHub repo if that's simpler.
+              </p>
+              <div class="project__meta">
+                <ul class="tags">
+                  <li class="tag">Rust</li>
+                  <li class="tag">CLI</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/yourusername/repo" target="_blank" rel="noopener">Code →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ---------- ABOUT ---------- -->
+      <section class="section" id="about">
+        <p class="section__eyebrow">Background</p>
+        <h2 class="section__title">About</h2>
+
+        <p class="about__text">
+          <!-- TODO: a few sentences of real bio — background, what you're into, what you're looking for -->
+          A couple of paragraphs about your path so far: what you studied or how you got into this,
+          what kind of problems you like working on, and anything that makes you, you. Keep it human —
+          this is the one place on the page where personality matters more than precision.
+        </p>
+        <p class="about__text">
+          Second paragraph if useful — current focus, what you're learning, or what kind of role
+          you're looking for next.
+        </p>
+
+        <div class="skills">
+          <div class="skills__group">
+            <p class="skills__group-title">Languages</p>
+            <ul class="skills__items">
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Go</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <p class="skills__group-title">Frontend</p>
+            <ul class="skills__items">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <p class="skills__group-title">Backend</p>
+            <ul class="skills__items">
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <p class="skills__group-title">Tools</p>
+            <ul class="skills__items">
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- CONTACT ---------- -->
+      <section class="section" id="contact">
+        <p class="section__eyebrow">Get in touch</p>
+        <h2 class="section__title">Contact</h2>
+        <p class="contact__text">
+          Open to new opportunities and always happy to talk shop. The fastest way to reach me is email.
+        </p>
+        <a class="contact__email" href="mailto:you@example.com">you@example.com</a>
+      </section>
+
+      <footer class="footer">
+        <span>&copy; 2026 Your Name</span>
+        <span>Built with HTML, CSS &amp; JS</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
