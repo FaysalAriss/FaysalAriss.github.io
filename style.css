@@ -454,6 +454,7 @@ ul {
     font-size: 0.95rem;
     max-width: 62ch;
     margin-bottom: 14px;
+    text-align: justify;
 }
 
 .project__meta {
@@ -501,7 +502,6 @@ ul {
 
 .project__image {
     display: flex;
-    margin-top: 16px;
     max-width: 480px;
     width: 100%;
     justify-content: center;
@@ -511,9 +511,9 @@ ul {
 }
 
 .project__image img {
-    margin: 8px;
+    padding: 8px;
     display: block;
-    border-radius: 8px;
+    border-radius: 16px;
     /*width: 100%;
     height: auto;
     max-height: 400px;*/
@@ -521,6 +521,16 @@ ul {
     object-fit: contain;
 }
 
+.project__image video {
+    padding: 8px;
+    display: block;
+    border-radius: 16px;
+    /*width: 100%;
+    height: auto;
+    max-height: 400px;*/
+    max-width: 100%;
+    object-fit: contain;
+}
 /* =========================================================
    About / skills
    ========================================================= */
