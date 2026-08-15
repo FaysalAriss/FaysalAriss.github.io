@@ -437,7 +437,7 @@ ul {
     padding-bottom: 2px;
 }
 
-.project:hover .project__title a,
+.project__title a:hover,
 .project__title a:focus-visible {
     background-size: 100% 1.5px;
 }
@@ -508,6 +508,7 @@ ul {
     border-radius: 6px;
     overflow: hidden;
     border: 1px solid var(--line);
+    margin-top: 16px;
 }
 
 .project__image img {
