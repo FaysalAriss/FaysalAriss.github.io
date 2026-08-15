@@ -51,3 +51,40 @@
 
   sections.forEach((s) => observer.observe(s));
 })();
+
+// ---------------------------------------------------------
+// Click a project/case-study image to view it enlarged
+// ---------------------------------------------------------
+(function () {
+  const images = document.querySelectorAll('.project__image img, .case-body img');
+  if (!images.length) return;
+
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = '<button class="lightbox__close" type="button" aria-label="Close">Close ✕</button><img alt="">';
+  document.body.appendChild(lightbox);
+
+  const lightboxImg = lightbox.querySelector('img');
+
+  function open(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  images.forEach((img) => {
+    img.addEventListener('click', () => open(img.src, img.alt));
+  });
+
+  lightbox.addEventListener('click', close);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+})();
