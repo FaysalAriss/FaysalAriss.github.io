@@ -236,6 +236,63 @@ ul {
     color: var(--ink);
 }
 
+.theme-toggle__image {
+    display: none;
+    width: 64px;
+    height: auto;
+    /*filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.7));*/
+    transition: transform 0.15s ease;
+}
+
+[data-theme="dark"] .theme-toggle {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    border-color: transparent;
+}
+
+[data-theme="dark"] .theme-toggle__label {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle__image {
+    display: block;
+}
+
+.theme-toggle:hover .theme-toggle__image {
+    transform: rotate(-2deg) scale(1.04);
+}
+
+/* index.html only: has artwork for both states, so it never falls back to text */
+.theme-toggle--image-only {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.theme-toggle--image-only:hover {
+    border-color: transparent;
+}
+
+.theme-toggle__image.theme-toggle__image--to-dark {
+    display: block;
+}
+
+.theme-toggle__image.theme-toggle__image--to-light {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle__image.theme-toggle__image--to-dark {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle__image.theme-toggle__image--to-light {
+    display: block;
+}
+
 /* ---- Main column ---- */
 .main {
     flex: 1;

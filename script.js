@@ -7,17 +7,10 @@
   const toggle = document.querySelector('[data-theme-toggle]');
   if (!toggle) return;
 
-  function updateLabel(theme) {
-    toggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
-  }
-
-  updateLabel(root.getAttribute('data-theme'));
-
   toggle.addEventListener('click', function () {
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
-    updateLabel(next);
   });
 })();
 
