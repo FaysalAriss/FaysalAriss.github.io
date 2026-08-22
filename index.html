@@ -10,7 +10,7 @@
   <script>
     (function () {
       var stored = localStorage.getItem('theme');
-      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var theme = stored || 'dark';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -29,6 +29,7 @@
     <!-- ================= SIDEBAR ================= -->
     <aside class="sidebar">
       <button class="theme-toggle" data-theme-toggle type="button">Dark mode</button>
+      <button><img src="assets/light-mode.webp" width="64px"></button>
 
       <div class="identity">
         <h1 class="identity__name">Faysal Ariss</h1>
